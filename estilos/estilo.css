@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@font-face {
+    src: url('../fuentes/DragonFire.ttf');
+    font-family: letra1;
+}
+@font-face {
+    src: url('../fuentes/san_frediano_regular.ttf');
+    font-family: letra2;
+}
+#fondoback {
+    background-image: url('../imagenes/tile-sky2.jpg');
+}
+#container {
+    margin: auto;
+    width: 80%;
+}
+#fondo{
+    margin-top: -102px;
+    background-image: url('../imagenes/dragon1.jpg');
+    width: auto;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+#fondo h1 {
+    float: right;
+    color: purple;
+    padding: 15px;
+    margin: 5%;
+    font-size: 3em;
+    background-color: rgba(255, 255, 255, 0.473);
+    border-radius: 4% 25% 4% 25%;
+    font-family: letra1;
+}
+#historia {
+    margin-top: -21px;
+    background-image: url('../imagenes/tile.jpg');
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+#historia h1 {
+    padding: 5%;
+    position: relative;
+    text-align: center;
+    font-family: letra1;
+}
+#historia p {
+    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+    color: white;
+    font-family: letra2;
+}
+#primerp {
+    margin-top: -5%;
+}
+.grid4col {
+    padding: 2%;
+    margin-top: -16px;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.col4 {
+    width: 100%;
+    text-align: center;
+}
+.col4 img {
+    opacity: 50%;
+}
+.col4 img:hover {
+    opacity: 100%;
+}
+footer {
+    background-image: url('../imagenes/tile.jpg');
+    position: relative;
+    width: auto;
+    height: 15vh;
+    margin-top: -16px;
+}
+footer p {
+    padding: 15px;
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color:#a8009a;
+}  
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}  
+.topnav a:hover {
+    background-color: rgba(128, 189, 247, 0.507);
+    color: black;
+}  
+.topnav a.active {
+    color: white;
+}  
+.topnav .icon {
+    display: none;
+}  
+@media screen and (max-width: 880px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+}  
+@media screen and (max-width: 880px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+}
+@media screen and (max-width: 1010px){
+    .grid4col {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .col4 {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 880px){
+    .grid4col {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .col4 {
+        width: 100%;
+    }
+}
